@@ -1,15 +1,21 @@
 package org.example.testes;
 
-import org.example.modelo.Modalidade;
-import org.example.modelo.Aluno;
+import org.example.Modalidade;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ModalidadeTest {
 
     @Test
-    public void testAdicionarAluno() {
+    public void testGetNome() {
         Modalidade modalidade = new Modalidade("Musculação");
-        Aluno aluno = new Aluno("Lucas", 25);
-        modalidade.adicionarAluno(aluno);
+        assertEquals("Musculação", modalidade.getNome());
+    }
+
+    @Test
+    public void testSetNome() {
+        Modalidade modalidade = new Modalidade("Pilates");
+        modalidade.setNome("Yoga");
+        assertEquals("Yoga", modalidade.getNome());
     }
 }
