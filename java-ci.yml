@@ -1,4 +1,4 @@
-  name: Java CI - Sistema Academia
+name: Java CI - Sistema Academia
 
 on: [push, pull_request]
 
