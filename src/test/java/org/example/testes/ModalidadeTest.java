@@ -11,11 +11,13 @@ public class ModalidadeTest {
         Modalidade modalidade = new Modalidade("Musculação");
         assertEquals("Musculação", modalidade.getNome());
     }
-
+    
+    
     @Test
     public void testSetNome() {
         Modalidade modalidade = new Modalidade("Pilates");
         modalidade.setNome("Yoga");
         assertEquals("Yoga", modalidade.getNome());
     }
+    //Teste modalidade
 }
