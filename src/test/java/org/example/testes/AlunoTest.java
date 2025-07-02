@@ -24,6 +24,6 @@ public class AlunoTest {
     public void testFrequenciaMensal() {
         Aluno aluno = new Aluno("Lucas", 25);
         aluno.registrarFrequencia(20, 18);
-        assertEquals(9.0, aluno.getFrequenciaMensal(), 0.01);
+        assertEquals(90.0, aluno.getFrequenciaMensal(), 0.01);
     }
 }
