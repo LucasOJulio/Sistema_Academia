@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AlunoTest {
-
+//Testa aluno
     @Test
     public void testAdicionarAtividadeExtra() {
         Aluno aluno = new Aluno("Lucas", 25);

@@ -1,20 +1,28 @@
-  name: Java CI - Sistema Academia
+name: Java CI com Maven
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout do código
+    - name: Clonar repositório
       uses: actions/checkout@v3
 
-    - name: Instalar o JDK
+    - name: Instalar Java
       uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
-        java-version: '17'
+        java-version: '11'
 
-    - name: Compilar e testar com Maven
-      run: mvn clean install
+    - name: Compilar com Maven
+      run: mvn -B compile --file pom.xml
+
+    - name: Rodar Testes
+      run: mvn test
