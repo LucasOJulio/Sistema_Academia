@@ -9,7 +9,7 @@ public class AlunoTest {
 //Testa aluno
     @Test
     public void testAdicionarAtividadeExtra() {
-        Aluno aluno = new Aluno("Lucas", 25);
+        Aluno aluno = new Aluno("Lucas Julio", 25);
         aluno.adicionarAtividadeExtra("Pilates");
     }
 
