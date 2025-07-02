@@ -6,11 +6,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AlunoTest {
-//Testa aluno
+
     @Test
     public void testAdicionarAtividadeExtra() {
-        Aluno aluno = new Aluno("Lucas Julio", 25);
+        Aluno aluno = new Aluno("Lucas", 25);
         aluno.adicionarAtividadeExtra("Pilates");
+        // sem assert porque não há getter, apenas não deve lançar exceções
     }
 
     @Test
