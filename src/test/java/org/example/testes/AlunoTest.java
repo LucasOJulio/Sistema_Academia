@@ -11,7 +11,6 @@ public class AlunoTest {
     public void testAdicionarAtividadeExtra() {
         Aluno aluno = new Aluno("Lucas", 25);
         aluno.adicionarAtividadeExtra("Pilates");
-        // sem assert porque não há getter, apenas não deve lançar exceções
     }
 
     @Test
