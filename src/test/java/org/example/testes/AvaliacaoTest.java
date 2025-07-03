@@ -9,6 +9,6 @@ public class AvaliacaoTest {
     @Test
     public void testIndiceEvolucao() {
         Avaliacao avaliacao = new Avaliacao(80.0, 75.0);
-        assertEquals(8, avaliacao.getIndiceEvolucao(), 0.01);
+        assertEquals(6.25, avaliacao.getIndiceEvolucao(), 0.01);
     }
 }
