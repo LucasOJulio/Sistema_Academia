@@ -9,5 +9,5 @@ public class SistemaAcademiaTest {
     public void testStatus() {
         SistemaAcademia sa = new SistemaAcademia();
         assertEquals("Sistema de Academia operando.", sa.status());
-    }
+    }//oi
 }
